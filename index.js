@@ -4,9 +4,10 @@ console.log("");
 var readlineSync = require("readline-sync");
 var score = 0;
 var userName = readlineSync.question("What's your Name ? ");
-console.log("Welcome " + userName + " to Do YOU KNOW Navnath ?");
+console.log("Welcome " + userName+"\n");
 
-
+console.log("Do YOU KNOW Navnath 🔊");
+console.log("\n");
 //function play
 function play(question, answer) {
   var userAnswer = readlineSync.question(question);
@@ -34,7 +35,7 @@ var questions = [
     answer: "ironman"
   },
   {
-    question: "Where do I work ?",
+    question: "Where do I work (Company) ?",
     answer: "wipro"
   }
 ];
@@ -52,7 +53,7 @@ console.log("YAY!!! You SCORED :", score);
 
 var highscore = [
   {
-    name: "Navnat",
+    name: "Navnath",
     score: 3
   },
   {
